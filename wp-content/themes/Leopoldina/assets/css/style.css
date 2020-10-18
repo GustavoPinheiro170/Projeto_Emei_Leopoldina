@@ -1,0 +1,49 @@
+ul {
+    padding: 0px;
+    margin:0px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.slide li >  img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px grey;
+}
+
+.slide-wrapper {
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(254,208,19,0.2329306722689075) 97%, rgba(254,208,19,0.2329306722689075) 97%);
+
+}
+.slide {
+    display: flex;
+}
+
+.slide li {
+    flex-shrink: 0;
+    width: 80vw;
+    max-width: 350px;
+    margin: 0 20px;
+    font-family: 'Gloria Hallelujah', cursive;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.slide {
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.li-color{
+    color: green;
+}

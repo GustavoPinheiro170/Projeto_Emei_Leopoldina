@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+
+* {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   margin-left: 0;
+   margin-right: 0;
+ 
+}
+html,
+div,
+body {
+
+   overflow-x: hidden ;
+}
+
+h2{
+   font-family: 'Gloria Hallelujah', cursive;
+}
+
+.navbar-nav li {
+   padding: 10px;
+}
+
+/* FIM MODALIDADES */
+
+
+.navbar-absolut{
+   position: absolute !important;
+    z-index: 999;
+    color: white;
+
+}
+ .collapse .navbar-collapse  {
+    justify-content: center !important;
+ }
+
+ .navbar {
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(254,208,19,0.2329306722689075) 97%, rgba(254,208,19,0.2329306722689075) 97%);
+
+    
+ }
+.navbar a {
+   font-family: 'Gloria Hallelujah', cursive;
+   color: white;
+   text-decoration: none;
+   font-size: 20px;
+   transition: .4s;
+}
+
+.navbar a:hover{
+   text-decoration: none;
+   color: yellow;
+   border-bottom: 1px solid white;
+   
+}
+
+/* INICIO PARTE QUEM SOMOS */
+
+.main_init{
+   position: relative;
+}
+.banner-home {
+   background-size: cover;
+   
+   position: relative;
+   width: 100vw;
+   height: 600px;
+}
+.banner-home  img{
+   width:100%;
+   height:100%;
+   object-fit: cover;
+   
+}
+
+.banner-home::before{
+   content: '';
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   background: rgb(170,58,6);
+   background: linear-gradient(0deg, rgba(170,58,6,0.700717787114846) 0%, rgba(254,208,19,0.2329306722689075) 97%);}
+
+.container-box {
+   display: flex;
+   gap: 16px;
+   position: absolute;
+   width: 100%;
+   height: 90%;
+   left: 0;
+   right: 0;
+   top: 10%;
+   z-index: 99; 
+}
+
+.container-box img {
+   width: 45%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 0px 50% 50% 0px;
+}
+
+.container-box img:after{
+   position: absolute;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   content: '';
+   width: 30px;
+   height: 90px;
+   background-color: orange;
+}
+
+.container-text {
+   margin-top: 20px;
+   margin-right: 35px;
+   color: white;
+}
+
+.container-text p {
+   border-left: 2px solid yellow;
+   padding: 20px;
+   color: #771313;
+   font-size: 19px;
+   font-weight: 500;
+}
+.container-box h2{
+   font-size: 35px;
+   margin-bottom: 20px;
+   font-weight: bold;
+   color: #ea3a3a;
+}
+/* FIM PARTE QUEM SOMOS  */
+
+
+
+
+/* Responsividade */
+
