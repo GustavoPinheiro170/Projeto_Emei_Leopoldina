@@ -49,7 +49,7 @@ function add_Main_Nav() {
 		'public'      => true,
 		'has_archive' => true,
 		'menu_icon'   => 'dashicons-format-quote',
-		'supports'    => array('title',  'thumbnail', 'page-attributes', 'custom-fields'),
+		'supports'    => array('title', 'editor', 'thumbnail', 'page-attributes', 'custom-fields'),
 		'taxonomies'  => array('category', 'post_tag'),
 		)	
 	);
@@ -58,12 +58,12 @@ function add_Main_Nav() {
 add_action('init', 'emei_turmas');
 
 
-function vagas(){
-	register_post_type('vagas',
+function quemsomos(){
+	register_post_type('quemsomos',
 	array(
 		'labels'            => array(
-			'name'          => __('Vagas'),
-			'singular_name' => __('vaga')
+			'name'          => __('Quem Somos'),
+			'singular_name' => __('Quem Somos')
 		),
 		'public'      => true,
 		'has_archive' => true,
@@ -74,7 +74,25 @@ function vagas(){
 	);
 }
 
-add_action('init', 'vagas');
+add_action('init', 'quemsomos');
+
+function projetos(){
+	register_post_type('projetos',
+	array(
+		'labels'            => array(
+			'name'          => __('Projetos'),
+			'singular_name' => __('Projeto')
+		),
+		'public'      => true,
+		'has_archive' => true,
+		'menu_icon'   => 'dashicons-format-quote',
+		'supports'    => array('title', 'editor', 'thumbnail', 'page-attributes', 'custom-fields'),
+		'taxonomies'  => array('category', 'post_tag'),
+		)	
+	);
+}
+
+add_action('init', 'projetos');
 
 
 
