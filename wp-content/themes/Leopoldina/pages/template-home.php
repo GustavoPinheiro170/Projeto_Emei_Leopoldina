@@ -23,7 +23,7 @@ get_header();
 
             <div class='col-sm-6'>
                 <div class='container-text'>
-                    <h2>TITULO</h2>
+                    <h2>POEMA</h2>
                     <p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
                 </div>
             </div>
@@ -55,8 +55,7 @@ get_header();
     <!-- Fim quem somos -->
 
     <div class='container-turmas js-animated' id='turmas'>
-        <h2 style='margin-bottom:50px'>Turmas</h2>
-        <div class='row'>
+        <div class='row containerAfter'>
             <?php
             $args = array(
                 'post_type' => 'turmas',
@@ -77,7 +76,6 @@ get_header();
 
 
     <div class='container-projetos js-animated' id='projetos'>
-        <h2>Projetos</h2>
         <div class='row internal'>
             <?php
             $argsProjeto = array(

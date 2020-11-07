@@ -11,11 +11,12 @@
 
 <header>
 <?php wp_head(); ?>
-    <div class='content'>
+    <div class='content' >
         <div class='row menu-bar'>
-            <div class='col-md-12 navbar-fixed' style='padding-left:0px; padding-right:0px; width:100vw; max-width: 100vw;'>
+            <div class='col-md-12 navbar-fixed' style='padding-left:0px; padding-right:0px; width:100vw; max-width: 100vw; '>
                 <nav class="navbar navbar-expand-lg navbar-light bg-gray">
                     <a class="navbar-brand" href="#"></a>
+                <img src='<?php bloginfo('template_directory'); ?>/assets/img/Logosite.png'  width='90px'/>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
